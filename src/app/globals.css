@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #F7F8FA;
+  --foreground: #1F2937;
+  --card: #FFFFFF;
+  --card-foreground: #1F2937;
+  --popover: #FFFFFF;
+  --popover-foreground: #1F2937;
+  --primary: #526D9B;
+  --primary-foreground: #FFFFFF;
+  --secondary: #E8EEF8;
+  --secondary-foreground: #526D9B;
+  --muted: #F7F8FA;
+  --muted-foreground: #6B7280;
+  --accent: #E8EEF8;
+  --accent-foreground: #526D9B;
+  --destructive: #BB6D70;
+  --border: #E5E7EB;
+  --input: #E5E7EB;
+  --ring: #526D9B;
+
+  /* Design System PT Priangan Sentosa */
+  --erp-blue: #526D9B;
+  --erp-blue-light: #E8EEF8;
+  --erp-sage: #638773;
+  --erp-sage-light: #DDEBE3;
+  --erp-amber: #C28B50;
+  --erp-amber-light: #F5E7D4;
+  --erp-lavender: #8973AA;
+  --erp-lavender-light: #E9E2F3;
+  --erp-rose: #BB6D70;
+  --erp-rose-light: #F4DFDF;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    background-color: #F7F8FA;
+    color: #1F2937;
+  }
+}
